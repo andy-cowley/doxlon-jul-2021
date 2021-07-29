@@ -1,0 +1,22 @@
+speed: 7
+lines:
+- prompt: $ (feature/awesomeness)
+  in: git checkout main
+- out: "Switched to branch 'main'"
+- out: "Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded."
+- out: '  (use "git pull" to update your local branch)'
+- prompt: $ (main)
+  in: devops --do-some-magic
+- out: "You are number 25 in the queue"
+  color: green
+  bold: True
+- out: "Waiting..."
+- progress: true
+  progressChar: .
+- out: "ERR: Syntax error. Request could not be completed."
+  color: red
+  bold: true
+- prompt: $ (main)
+  in: "(ノಥ,_｣ಥ)ノ彡┻━┻"
+- out: "You have been eaten by a grue."
+  color: yellow

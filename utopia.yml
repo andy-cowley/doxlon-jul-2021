@@ -1,0 +1,20 @@
+
+speed: 7
+lines:
+- prompt: $ (feature/awesomeness)
+  in: git checkout main
+- out: "Switched to branch 'main'"
+- prompt: $ (main)
+  in: devops --deploy
+- out: "Working..."
+  color: blue
+  bold: True
+- progress: true
+  progressChar: .
+- out: "INFO: Deployment Complete."
+  color: green
+  bold: true
+- prompt: $ (main)
+  in: "ᕕ( ᐛ )ᕗ"
+- out: "You're welcome."
+  color: yellow
